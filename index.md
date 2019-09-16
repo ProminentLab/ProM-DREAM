@@ -1,20 +1,23 @@
 # DREAM: Decay Replay Mining
 
 ## About
-This ProM plugin implements the Decay Replay Mining (DREAM) preprocessing approach described in [Decay Replay Mining to Predict Next Events](https://arxiv.org/abs/1903.05084) by Julian Theis and Houshang Darabi. The plugin considers a Petri net process model as PNML and an CSV formatted event log as input and produces timed state samples that can be used for further machine learning and data science tasks. The plugin enhances and parametrizes each place of the process model with a time decay function. Afterwards, the event log is replayed on the enhanced model and timed state samples are extracted at every discrete timestep observed in the log.
+This ProM plugin implements the Decay Replay Mining (DREAM) preprocessing approach described in [Decay Replay Mining to Predict Next Process Events](https://ieeexplore.ieee.org/document/8811455) by Julian Theis and Houshang Darabi. The plugin considers a Petri net process model as PNML and an CSV formatted event log as input and produces timed state samples that can be used for further machine learning and data science tasks. The plugin enhances and parametrizes each place of the process model with a time decay function. Afterwards, the event log is replayed on the enhanced model and timed state samples are extracted at every discrete timestep observed in the log.
 
 
 ## References
 If you are using this plugin, please cite:
-> Theis, Julian, and Houshang Darabi. "DREAM-NAP: Decay Replay Mining to Predict Next Process Activities." *arXiv preprint arXiv:1903.05084* (2019).
+> Theis, Julian, and Houshang Darabi. "Decay Replay Mining to Predict Next Process Events." IEEE Access 7 (2019): 119787-119803.
 
 BibTeX:
 ```
-@article{theis2019dream,
-  title={DREAM-NAP: Decay Replay Mining to Predict Next Process Activities},
+@article{theis2019decay,
+  title={Decay Replay Mining to Predict Next Process Events},
   author={Theis, Julian and Darabi, Houshang},
-  journal={arXiv preprint arXiv:1903.05084},
-  year={2019}
+  journal={IEEE Access},
+  volume={7},
+  pages={119787--119803},
+  year={2019},
+  publisher={IEEE}
 }
 ```
 
